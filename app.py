@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-import lib
+import lib_requests as lib
 
 app = Flask(__name__)
 posts = []
