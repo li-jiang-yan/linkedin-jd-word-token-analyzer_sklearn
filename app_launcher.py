@@ -24,4 +24,4 @@ if __name__ == "__main__":
     run_server()
     input() # just so the terminal stays open
 
-# Create .exe with `pyinstaller --onedir --name JobPostTokenAnalyzer --add-data ".;." .\app_launcher.py``
+# Create .exe with `pyinstaller --onedir --name JobPostTokenAnalyzer --add-data ".;." .\app_launcher.py`
