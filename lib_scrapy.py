@@ -1,5 +1,6 @@
 from collections import Counter
 import itertools
+import os
 from urllib.parse import quote
 
 from bs4 import BeautifulSoup
@@ -10,6 +11,8 @@ from scrapy.utils.project import get_project_settings
 from sklearn.feature_extraction.text import CountVectorizer
 
 from scraper.spiders.post_spider import PostSpider
+
+os.environ.setdefault("SCRAPY_SETTINGS_MODULE", "scraper.settings")
 
 crochet.setup()
 runner = CrawlerRunner(get_project_settings())
